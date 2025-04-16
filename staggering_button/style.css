@@ -1,0 +1,62 @@
+body{
+  background: radial-gradient(circle, rgba(74,9,9,1) 43%, rgba(25,6,4,1) 92%, rgba(0,0,0,1) 100%);
+}
+
+#box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.button{
+  height: 22px;
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px !important;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.span1{
+  transition: transform 1s ease-in-out;
+  text-shadow: 0px 20px;
+}
+
+
+.btn-container{
+  height: 44px;
+  padding: 0px 10px;
+  background-color: white;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.8s ease-in-out;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-container:hover{
+  transform: scale(0.95);
+}
+
+.btn-container:hover .span1{
+  transform: translate(0px, -22px) scale(1);
+}
+
+
+
+
