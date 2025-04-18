@@ -13,7 +13,7 @@
 }
 
 body{
-  background: radial-gradient(circle, rgba(218,14,66,1) 28%, rgba(74,9,9,1) 80%, rgba(0,0,0,1) 100%);
+  background: black;
 }
 
 #box{
@@ -52,30 +52,33 @@ body{
 }
 
 .span1:hover{
-  transform: translate(0px, -25px) scale(1);
+  transform: translate(0px, -27px) scale(1);
 }
 
-.button:hover .underline{
-  width: 100%;
+.button:hover .underline-lr{
+  transform: scale(1,1);
 }
 
-.underline{
+.button:hover .underline-rl{
+  transform: scale(1,1);
+}
+
+.underline-lr, .underline-rl{
   height: 1px;
   border-top: 1px solid white;
-  width: 0%;
+  width: 100%;
   position: absolute;
   bottom: 0px;
-  left: auto;
+  transform: scale(0,1);
   transition: all 0.5s ease-in-out;
 }
 
-.left{
-  left: 0px;
+.underline-lr{
+  transform-origin: center left;
 }
 
-.centre{
-  left: auto;
+.underline-rl{
+  transform-origin: center right;
 }
-
 
 
